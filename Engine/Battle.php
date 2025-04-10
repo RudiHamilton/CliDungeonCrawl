@@ -30,10 +30,15 @@ Class Battle
 
                 if($attackChoice == 1){
                     $damage = $weapon->getAttack1()->getAttackDamage();
+                    $this->enemy->takeDamage($damage);
                 }elseif($attackChoice == 2){
                     $damage = $weapon->getAttack2()->getAttackDamage();
+                    $this->enemy->takeDamage($damage);
+                }else{
+                    $damage = 0;
+                    echo $this->player->getName().' flinched! (next time try selecting an attack...)';
                 }
-                $this->enemy->takeDamage($damage);
+               
                 echo PHP_EOL.$this->player->getName().' attacked and dealt '.$damage.' points of damage to the '.$this->enemy->getName().PHP_EOL;
 
             }elseif(strtolower($choice == 'h'))

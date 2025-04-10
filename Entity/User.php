@@ -29,10 +29,19 @@ Class User extends Entity
     }
     public function equipWeapon(Weapon $weapon)
     {
+        $this->unequipWeapon();
         $this->equippedWeapon = $weapon;
     }
     public function getEquippedWeapon()
     {
         return $this->equippedWeapon;
+    }
+    public function getEquippedWeaponName():string
+    {
+        return $this->equippedWeapon->name;
+    }
+    public function unequipWeapon()
+    {
+        $this->equippedWeapon = null;
     }
 }
