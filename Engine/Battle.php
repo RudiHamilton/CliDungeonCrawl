@@ -13,6 +13,8 @@ Class Battle
         $display = new DisplayAscii;
         $display->display($this->enemy->getName());
 
+        $weapon = $this->player->getEquippedWeapon();
+
         echo PHP_EOL.'Battle has started between '.$this->player->getName().' and '.$this->enemy->getName().PHP_EOL.PHP_EOL;
 
         while($this->player->isAlive()&& $this->enemy->isAlive())
@@ -22,7 +24,15 @@ Class Battle
             $choice = readline('[A]ttack or [H]eal, (A/H)');
             if(strtolower($choice == 'a'))
             {
-                $damage = $this->player->getAttackDamage();
+                $attackChoice = readline('Which attack are you going to use :'.PHP_EOL
+                .'1. '.$weapon->getAttack1()->getAttackName().PHP_EOL
+                .'2. '.$weapon->getAttack2()->getAttackName().PHP_EOL);
+
+                if($attackChoice == 1){
+                    $damage = $weapon->getAttack1()->getAttackDamage();
+                }elseif($attackChoice == 2){
+                    $damage = $weapon->getAttack2()->getAttackDamage();
+                }
                 $this->enemy->takeDamage($damage);
                 echo PHP_EOL.$this->player->getName().' attacked and dealt '.$damage.' points of damage to the '.$this->enemy->getName().PHP_EOL;
 

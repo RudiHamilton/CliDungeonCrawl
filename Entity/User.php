@@ -3,6 +3,7 @@ Class User extends Entity
 {
     public $attackDamage;
     public $healAmount;
+    public ?Weapon $equippedWeapon = null;
 
     public function __construct($id, $name, $healthPool, $currentHealth, $attackDamage, $healAmount)
     {
@@ -12,14 +13,11 @@ Class User extends Entity
         $this->attackDamage = $attackDamage;
         $this->name = $name;
         $this->healAmount = $healAmount;
+
     }
     public function getAttackDamage():int
     {
-        $randomDamage10Percent = $this->attackDamage/10;
-        $start = $this->attackDamage - $randomDamage10Percent;
-        $end = $this->attackDamage + $randomDamage10Percent;
-        $randomDamage = rand($start, $end);
-        return round($randomDamage);
+        return 0;
     }
     public function getHealAmount():int
     {
@@ -29,5 +27,12 @@ Class User extends Entity
         $randomHeal = rand($start, $end);
         return $randomHeal;
     }
-
+    public function equipWeapon(Weapon $weapon)
+    {
+        $this->equippedWeapon = $weapon;
+    }
+    public function getEquippedWeapon()
+    {
+        return $this->equippedWeapon;
+    }
 }
