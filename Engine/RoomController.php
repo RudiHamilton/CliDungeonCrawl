@@ -14,7 +14,7 @@ Class RoomController
         if ($seed <= 10)
         {
             $this->roomChoice(new LootRoom,$user); // for loot room
-        } 
+        }
         elseif ($seed <= 50)
         {
             $this->roomChoice(new MonsterRoom,$user); // for monster room

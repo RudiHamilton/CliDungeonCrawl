@@ -19,6 +19,6 @@
             'name' => 'Cerberus',
             'healthPool' => 100,
             'currentHealth' => 100,
-            'attackDamage' => 50,
+            'attackDamage' => 35,
         ),
     );

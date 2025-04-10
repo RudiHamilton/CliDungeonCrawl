@@ -7,7 +7,11 @@ Class EmptyRoom implements RoomInterface
     }
     public function roomQuirk($user)
     {
-        
+        $rand = rand(1,10);
+        if($rand == 5){
+            $quotes = new RandomQuotes();
+            $quotes->getQuote();
+        }
     }
     public function exit($user)
     {

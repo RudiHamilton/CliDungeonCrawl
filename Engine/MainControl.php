@@ -5,6 +5,11 @@ Class MainControl
     public function areaSelector($user)
     {
         self::$count++; 
+        if(self::$count == 50){
+            $room = new RoomController($user);
+            $room->roomChoice(new KingsRoom,$user);
+        }
+        
         if(self::$count%2){
             $room = new RoomController($user);
             $room->roomController($user);

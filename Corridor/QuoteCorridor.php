@@ -3,13 +3,13 @@ Class QuoteCorridor implements CorridorInterface
 {
     public function enter()
     {
-        PHP_EOL.readline('There is a table in the middle of this room.').PHP_EOL;
-        PHP_EOL.readline('The table has a piece of parchment on top of it.').PHP_EOL;
-        PHP_EOL.readline('You read the parchment and it says: ').PHP_EOL;
+        PHP_EOL.readline('A faint voice echos...').PHP_EOL;
     }
     public function corridorQuirk($user)
     {
-
+        $quote = new RandomQuotes();
+        $quote->getQuote();
+        PHP_EOL.readline('It bounces off the walls and through you.').PHP_EOL;
     }
     public function exit($user)
     {
