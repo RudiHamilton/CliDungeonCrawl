@@ -1,4 +1,9 @@
 <?php
+
+namespace Items\Weapon;
+
+use Items\Item;
+
 Class Weapon extends Item
 {
     public $type;

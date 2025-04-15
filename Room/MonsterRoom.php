@@ -1,4 +1,9 @@
 <?php
+namespace Room;
+use Engine\MonsterRandomiser;
+use Engine\Battle;
+use Engine\MainControl;
+
 Class MonsterRoom implements RoomInterface
 {
     public function enter()

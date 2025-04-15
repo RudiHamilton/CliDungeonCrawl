@@ -1,4 +1,9 @@
 <?php
+
+namespace Entity;
+
+use Items\Weapon\Weapon;
+
 Class User extends Entity
 {
     public $attackDamage;

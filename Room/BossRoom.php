@@ -1,4 +1,9 @@
 <?php
+namespace Room;
+use Engine\MainControl;
+use Engine\Battle;
+use Engine\BossRandomiser;
+
 Class BossRoom implements RoomInterface
 {
     public function enter()

@@ -1,4 +1,7 @@
 <?php
+
+namespace Items;
+
 Class Item
 {
     public $id;

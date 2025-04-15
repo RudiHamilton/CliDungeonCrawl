@@ -1,4 +1,6 @@
 <?php
+namespace Room;
+use Engine\MainControl;
 Class TrappedRoom implements RoomInterface
 {
     public function enter()

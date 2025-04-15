@@ -1,4 +1,6 @@
 <?php 
+namespace Corridor;
+use Engine\MainControl;
 Class EerieCorridor implements CorridorInterface
 {
     public function enter()

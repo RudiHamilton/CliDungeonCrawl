@@ -1,4 +1,6 @@
 <?php
+namespace Engine;
+use Entity\Boss;
 require_once __DIR__.'../../Entity/Boss.php';
 Class BossRandomiser
 {

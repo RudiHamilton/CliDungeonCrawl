@@ -1,4 +1,7 @@
 <?php
+namespace Engine;
+use Items\Weapon\Attack;
+use Items\Weapon\Weapon;
 Class LootRandomiser
 {
     public function lootPool()

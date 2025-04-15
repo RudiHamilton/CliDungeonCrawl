@@ -1,4 +1,7 @@
 <?php 
+namespace Corridor;
+use Engine\RandomQuotes;
+use Engine\MainControl;
 Class QuoteCorridor implements CorridorInterface
 {
     public function enter()

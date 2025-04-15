@@ -1,4 +1,5 @@
 <?php 
+namespace Engine;
 Class RandomQuotes
 {
     public function getQuote()

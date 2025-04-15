@@ -1,4 +1,6 @@
 <?php
+namespace Engine;
+use Entity\Monster;
 require_once __DIR__.'../../Entity/Monster.php';
 Class MonsterRandomiser
 {

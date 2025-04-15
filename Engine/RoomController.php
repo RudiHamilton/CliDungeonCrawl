@@ -1,4 +1,12 @@
 <?php 
+namespace Engine;
+use Room\LootRoom;
+use Room\MonsterRoom;
+use Room\BossRoom;
+use Room\TrappedRoom;
+use Room\KingsRoom;
+use Room\EmptyRoom;
+use Room\StoryTellingRoom;
 Class RoomController
 {
     public function roomChoice($room,$user)

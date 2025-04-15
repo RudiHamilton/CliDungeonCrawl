@@ -1,4 +1,10 @@
 <?php
+
+namespace Engine;
+
+Use Engine\RoomController;
+Use Engine\CorridorController;
+use Room\KingsRoom;
 Class MainControl
 {
     public static $count;

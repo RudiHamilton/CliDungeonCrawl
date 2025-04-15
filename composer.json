@@ -1,0 +1,21 @@
+{
+    "name": "rudihamilton/cli-dungeon-crawl",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "rudihamilton11@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "config\\": "config/",
+            "Corridor\\": "Corridor/",
+            "Engine\\": "Engine/",
+            "Entity\\": "Entity/",
+            "Items\\": "Items/",
+            "Room\\": "Room/",
+            "Tests\\": "Tests/"
+        }
+    }
+}

@@ -1,4 +1,8 @@
 <?php
+namespace Room;
+use Entity\Boss;
+use Engine\Battle;
+use Engine\MainControl;
 Class KingsRoom implements RoomInterface
 {
     public function enter()

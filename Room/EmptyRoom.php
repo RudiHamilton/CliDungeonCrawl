@@ -1,4 +1,8 @@
 <?php 
+namespace Room;
+use Engine\RandomQuotes;
+use Engine\MainControl;
+
 Class EmptyRoom implements RoomInterface
 {
     public function enter()

@@ -1,4 +1,7 @@
 <?php 
+
+namespace Entity;
+
 Class Boss extends Entity
 {
     public $attackDamage;

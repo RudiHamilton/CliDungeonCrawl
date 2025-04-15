@@ -1,4 +1,7 @@
 <?php
+
+Namespace Items\Weapon;
+
 Class Attack
 {
     public $attackName;

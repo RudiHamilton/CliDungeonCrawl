@@ -1,4 +1,6 @@
 <?php 
+namespace Corridor;
+use Engine\MainControl;
 Class HealCorridor implements CorridorInterface
 {
     public function enter()

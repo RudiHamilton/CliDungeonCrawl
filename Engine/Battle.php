@@ -1,4 +1,8 @@
 <?php
+namespace Engine;
+
+use Entity\User;
+use Entity\Entity;
 Class Battle
 {
     private User $player;
@@ -66,11 +70,6 @@ Class Battle
                 ECHO 'YOU WERE SLAIN BY '.strtoupper($this->enemy->getName()).PHP_EOL;
                 exit;
             }
-
-           
-
         }
-        
-        
     }
 }

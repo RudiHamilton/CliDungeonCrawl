@@ -1,4 +1,9 @@
 <?php 
+namespace Room;
+use Entity\Monster;
+use Engine\Battle;
+use Engine\LootRandomiser;
+use Engine\MainControl;
 Class LootRoom implements RoomInterface
 {
     public function enter()

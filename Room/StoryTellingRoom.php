@@ -1,4 +1,7 @@
 <?php 
+namespace Room;
+use Engine\RandomQuotes;
+use Engine\MainControl;
 Class StoryTellingRoom implements RoomInterface
 {
     public function enter()

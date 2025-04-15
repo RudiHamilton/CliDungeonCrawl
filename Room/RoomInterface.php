@@ -1,4 +1,6 @@
 <?php 
+namespace Room;
+
 
 interface RoomInterface
 {

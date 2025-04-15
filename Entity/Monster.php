@@ -1,5 +1,7 @@
 <?php 
-require_once 'Entity.php';
+
+namespace Entity;
+
 Class Monster extends Entity
 {
     public $name;

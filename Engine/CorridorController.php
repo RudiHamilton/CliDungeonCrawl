@@ -1,4 +1,10 @@
 <?php
+namespace Engine;
+use Corridor\QuoteCorridor;
+use Corridor\AmbushCorridor;
+use Corridor\Corridor;
+use Corridor\EerieCorridor;
+use Corridor\HealCorridor;
 Class CorridorController
 {
     public $corridor;

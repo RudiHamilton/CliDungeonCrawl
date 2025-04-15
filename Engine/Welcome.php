@@ -1,4 +1,13 @@
 <?php
+
+namespace Engine;
+
+use Entity\User;
+use Items\Weapon\Attack;
+use Items\Weapon\Weapon;
+use Engine\MainControl;
+
+
 Class Welcome
 {
     public function titleScreen()

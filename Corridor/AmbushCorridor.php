@@ -1,4 +1,9 @@
-<?php 
+<?php
+namespace Corridor;
+use Engine\MonsterRandomiser;
+use Engine\Battle;
+use Engine\MainControl;
+
 Class AmbushCorridor implements CorridorInterface
 {
     public function enter()

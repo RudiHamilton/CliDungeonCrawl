@@ -1,4 +1,5 @@
 <?php
+namespace Corridor;
 interface CorridorInterface
 {
     public function enter();
